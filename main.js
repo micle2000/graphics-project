@@ -24,7 +24,7 @@ function show_only_slide($slide) {
 
 function fullscreen_image($img) {
 	$img = $img.cloneNode(true);
-	$img.className = "fullscreen";
+	$img.className += " fullscreen";
 	document.body.className = "fullscreen_body";
 	document.body.appendChild($img);
 }
