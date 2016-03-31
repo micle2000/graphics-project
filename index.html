@@ -1,10 +1,80 @@
 <html>
 <head>
 	<title> Michael's Graphics Project </title>
+	<style>
+		img { display: inline-block; vertical-align: middle; }
+		p { max-width: 50%; }
+	</style>
 </head>
 <body>
 
-	<h1> my project </h1>
+	<h1> CS488 Project: Advanced Ray Tracer </h1>
+	<h3> By Michael Shimokura </h3>
+
+	<p> Intro goes here. </p>
+
+	<h2> Objective 1: Extra Primitives </h2>
+	<p> For my extra primitives I implemented Cones, Cylinders and Thin Lenses (Circles) </p>
+	<img src="images/cone_cylinder.png">
+	<img src="images/lens0.png">
+
+	<h2> Objective 2: Texture Mapping </h2>
+	<p>
+		You can associate a <code> gr.texture </code> with a <code>gr.material</code>.
+		The texture will be treated as part of the diffuse color of that object.
+	</p>
+	<img src="images/cone_cylinder_tex.gif">
+	<img src="images/cube_texture.gif">
+	<img src="images/cube_inside.gif">
+
+	<h2> Objective 3: Refraction </h2>
+	<p>
+		In the first image, the lens from Objective 1 is now transparent.
+		It is a converging lens, so the texture on the wall is enlarged.
+	</p>
+	<p>
+		The second image is a demonstration of total internal reflection.
+		The refractive index of the right mirror is iteratively lowered,
+		eventually turning it into a perfect mirror.
+	</p>
+	<img src="images/lens1.png">
+	<img src="images/internal_reflect.gif">
+
+	<h2> Objective 4: Anti-Aliasing </h2>
+	<p>
+		I implemented anti-aliasing using jittering.
+		The effects are subtle, but can be seen below.
+	</p>
+	<img src="images/alias1.png">
+	<img src="images/alias2.png">
+	<img src="images/alias3.png" width=400px>
+	<br>
+	<img src="images/alias_cows0.png">
+	<img src="images/alias_cows1.png">
+
+
+	<h2> Objective 5: Soft Shadows </h2>
+	<p>
+		To render penumbras, I modified <code>Light</code>s to have a radius.
+		Each shadow ray is cast towards a random point on the light.
+		Anti-aliasing combines with the random direction to produce an average of the
+		light intensity at that point.
+	</p>
+	<img src="images/shadows.gif">
+
+	<h2> Objective 6: Glossy Reflection and Refraction </h2>
+	<p>
+		Diffuse surfaces will not produce sharp reflections, because each incoming light
+		ray will be reflected at a different angle.
+
+		These images show glossy reflection and refraction.
+	</p>
+	<p>
+		Note: I used a uniform distribution to peturb the rays.
+	</p>
+	<img src="images/gloss.png">
+	<img src="images/gloss.gif">
+	
 
 </body>
 </html>
