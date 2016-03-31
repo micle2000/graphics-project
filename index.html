@@ -5,19 +5,37 @@
 		img { display: inline-block; vertical-align: middle; }
 		p { max-width: 50%; }
 		h2 { margin-top: 5em; }
+		.fullscreen {
+			height: 100%;
+			width: auto;
+		}
+		.fullscreen_body {
+			margin: 0;
+			text-align: center;
+			background-color: #101010;
+		}
 	</style>
+
+	<script src="main.js"></script>
 </head>
 <body>
 
+<div class="o0">
 	<h1> CS488 Project: Advanced Ray Tracer </h1>
 	<h3> By Michael Shimokura </h3>
 
-	<p> Intro goes here. </p>
+	<p> </p>
+
+</div>
+<div class="o1">
 
 	<h2> Objective 1: Extra Primitives </h2>
 	<p> For my extra primitives I implemented Cones, Cylinders and Thin Lenses (Circles) </p>
 	<img src="images/cone_cylinder.png">
 	<img src="images/lens0.png">
+
+</div>
+<div class="o2">
 
 	<h2> Objective 2: Texture Mapping </h2>
 	<p>
@@ -27,6 +45,9 @@
 	<img src="images/cone_cylinder_tex.gif">
 	<img src="images/cube_texture.gif">
 	<img src="images/cube_inside.gif">
+
+</div>
+<div class="o3">
 
 	<h2> Objective 3: Refraction </h2>
 	<p>
@@ -41,6 +62,9 @@
 	<img src="images/lens1.png">
 	<img src="images/internal_reflect.gif">
 
+</div>
+<div class="o4">
+
 	<h2> Objective 4: Anti-Aliasing </h2>
 	<p>
 		I implemented anti-aliasing using jittering.
@@ -48,11 +72,13 @@
 	</p>
 	<img src="images/alias1.png">
 	<img src="images/alias2.png">
-	<img src="images/alias3.png" width=400px>
+	<img src="images/alias3.png" width=400px style="width:100%; height:auto;">
 	<br>
 	<img src="images/alias_cows0.png">
 	<img src="images/alias_cows1.png">
 
+</div>
+<div class="o5">
 
 	<h2> Objective 5: Soft Shadows </h2>
 	<p>
@@ -62,6 +88,9 @@
 		light intensity at that point.
 	</p>
 	<img src="images/shadows.gif">
+
+</div>
+<div class="o6">
 
 	<h2> Objective 6: Glossy Reflection and Refraction </h2>
 	<p>
@@ -76,6 +105,9 @@
 	<img src="images/gloss.png">
 	<img src="images/gloss.gif">
 
+</div>
+<div class="o7">
+
 	<h2> Objective 7: Depth of Field </h2>
 	<p>
 		Regular cameras have a finite aperture and focal length, as opposed to the pinhole camera
@@ -89,6 +121,9 @@
 	<img src="images/dof.png">
 	<img src="images/dof.gif">
 
+</div>
+<div class="o8">
+
 	<h2> Objective 8: Caustics </h2>
 	<p>
 		I implemented caustics using bi-directional ray tracing and illumination maps.
@@ -100,20 +135,46 @@
 	<img src="images/caustics_wall.png">
 	<img src="images/lens2.png">
 
+</div>
+<div class="o9">
+
 	<h2> Objective 9: Final Scene </h2>
 	<img src="images/cup.png">
+
+</div>
+<div class="o10">
 
 	<h2> Objective 10: Animation </h2>
 	<img src="images/pool.gif">
 
+</div>
+<div class="o11">
+
 	<h2> Final Final Scene </h2>
 	<img src="images/final.png">
+
+</div>
+<div class="o12">
+	<h2> Extras </h2>
+	<img src="images/sample.png">
+	<img src="images/puppet.png">
+
+</div>
+<div class="o13">
 
 	<h2> Bloopers </h2>
 	<img src="images/error1.gif">
 	<img src="images/error2.png">
 	<img src="images/error3.png">
 	<img src="images/funny1.gif">
+
+</div>
+
+<div class="o14 fin" style="display: none;">
+	<div style="text-align: center;">
+		<h1> Fin. </h1>
+	</div>
+</div>
 
 </body>
 </html>
