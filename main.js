@@ -57,6 +57,7 @@ var slide_num = 0;
 var image_num = -1;
 
 document.addEventListener('keyup',function (e) {
+	e.preventDefault();
 	console.log(e.keyCode);
 	if (e.keyCode == 27) {
 		show_slides();
