@@ -4,6 +4,7 @@
 	<style>
 		img { display: inline-block; vertical-align: middle; }
 		p { max-width: 50%; }
+		h2 { margin-top: 5em; }
 	</style>
 </head>
 <body>
@@ -74,7 +75,45 @@
 	</p>
 	<img src="images/gloss.png">
 	<img src="images/gloss.gif">
-	
+
+	<h2> Objective 7: Depth of Field </h2>
+	<p>
+		Regular cameras have a finite aperture and focal length, as opposed to the pinhole camera
+		model we have been using thus far.
+
+		These qualities make rays from the same point on an object intersect with the film of a camera
+		at different points depending on how far away it is.
+
+		This causes some objects to be out of focus, as demonstrated below.
+	</p>
+	<img src="images/dof.png">
+	<img src="images/dof.gif">
+
+	<h2> Objective 8: Caustics </h2>
+	<p>
+		I implemented caustics using bi-directional ray tracing and illumination maps.
+
+		Each diffuse object in the scene has a special texture allocated for it which stores
+		indirect lighting for that object.
+	</p>
+	<img src="images/caustics.png">
+	<img src="images/caustics_wall.png">
+	<img src="images/lens2.png">
+
+	<h2> Objective 9: Final Scene </h2>
+	<img src="images/cup.png">
+
+	<h2> Objective 10: Animation </h2>
+	<img src="images/pool.gif">
+
+	<h2> Final Final Scene </h2>
+	<img src="images/final.png">
+
+	<h2> Bloopers </h2>
+	<img src="images/error1.gif">
+	<img src="images/error2.png">
+	<img src="images/error3.png">
+	<img src="images/funny1.gif">
 
 </body>
 </html>
